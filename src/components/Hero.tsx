@@ -34,9 +34,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       {/* Navigation Header */}
-      <nav className="relative z-20 bg-white/95 backdrop-blur-sm shadow-sm">
+      <nav className="relative z-20 bg-transparent">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
@@ -44,54 +44,8 @@ const Hero = () => {
                 alt="Servizing Logo" 
                 className="w-10 h-10"
               />
-              <span className="text-2xl font-bold text-gray-700">SERVIZING</span>
+              <span className="text-2xl font-bold text-white">SERVIZING</span>
             </div>
-
-            {/* Navigation Menu */}
-            <div className="hidden lg:flex items-center space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                HOME
-              </a>
-              <div className="relative group">
-                <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                  SECURITY
-                  <ChevronDown className="w-4 h-4 ml-1" />
-                </button>
-              </div>
-              <div className="relative group">
-                <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                  RWA
-                  <ChevronDown className="w-4 h-4 ml-1" />
-                </button>
-              </div>
-              <div className="relative group">
-                <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                  RESIDENTS
-                  <ChevronDown className="w-4 h-4 ml-1" />
-                </button>
-              </div>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                ABOUT US
-              </a>
-              <div className="relative group">
-                <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                  HELP
-                  <ChevronDown className="w-4 h-4 ml-1" />
-                </button>
-              </div>
-            </div>
-
-            {/* Download Apps Button */}
-            <button className="hidden lg:block bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
-              DOWNLOAD APPS
-            </button>
-
-            {/* Mobile Menu Button */}
-            <button className="lg:hidden text-gray-700">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
           </div>
         </div>
       </nav>
